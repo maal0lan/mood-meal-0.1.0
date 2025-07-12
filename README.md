@@ -28,14 +28,14 @@ venv\Scripts\activate
 
 ### 3. In meanwhile install OLLAMA 
 just run "setup.bat" (if that doesnt work follow below)
-    Ollama from: https://ollama.com/download
+Ollama from: https://ollama.com/download
 Once installed, open terminal and run:
-    ollama run mistral
+ollama run mistral
 
 ### 4. install all dependcies from req.txt
 pip install -r req.txt
 
-###.5 run the launcher.py
+### 5. run the launcher.py
 this will invoke gui/main_window.py
 
 ###  6. add in your prompt 
