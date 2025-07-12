@@ -1,57 +1,115 @@
 # 🍳 MoodMeal v0.1.0
 
-> A voice-first, hands-free AI cooking assistant that guides you step-by-step through recipes, personalized to your mood, weather, time, and ingredients. Built with Python, Tkinter GUI, and AI integration via Mistral-Ollama.
+> A voice-first, hands-free AI cooking assistant that guides you through personalized recipes — powered by Mistral via Ollama, wrapped in a sleek Tkinter GUI. Just speak. Cook. Slay.
 
 ---
 
 ## ✨ Features
 
-- 🎙️ Voice input/output (speech-to-text + TTS)
-- 🧠 AI-generated recipes (based on ingredients, weather, time)
-- 🥘 Live step-by-step cooking guidance
-- 🕒 Cooking timers with voice alerts
-- 🗣️ Ask assistant questions mid-cook
-- 📈 Progress bar & transcript log
-- 💻 Offline GUI (Tkinter) for hands-free usage(experimental)
+- 🎙️ **Voice Input & Output**  
+  Real-time speech-to-text and TTS (talks back with sass or sweetness — your choice).
+
+- 🧠 **AI-Generated Recipes**  
+  Based on your ingredients, weather, cook time, and vibes.
+
+- 🥘 **Live Step-by-Step Cooking Guidance**  
+  Spoken instructions, timers, progress — all in one hands-free interface.
+
+- 🕒 **Built-in Cooking Timers**  
+  Voice alerts for time-sensitive steps, including "halfway there" or "30 seconds left".
+
+- 🗣️ **Ask Questions Mid-Cooking**  
+  Ask anything while cooking — AI will explain, suggest, or cheer you on.
+
+- 💻 **Offline GUI**  
+  Minimalist Tkinter-based GUI with waveform animation and real-time interaction.
 
 ---
 
 ## 🛠️ Installation & Setup
 
-### 1. Clone the Repo
+### 1️⃣ Clone the Repository
+```bash
 git clone https://github.com/maal0lan/mood-meal-0.1.0.git
 cd mood-meal-0.1.0
+````
 
-### 2. create a virtual enviroment
+### 2️⃣ Create a Virtual Environment
+
+```bash
 python -m venv venv
-venv\Scripts\activate
+venv\Scripts\activate  # Windows
+```
 
-### 3. In meanwhile install OLLAMA 
-just run "setup.bat" (if that doesnt work follow below)
-Ollama from: https://ollama.com/download
-Once installed, open terminal and run:
+### 3️⃣ Install Ollama + Mistral
+
+> Already included in `setup.bat`, or do it manually:
+
+* Download Ollama: [https://ollama.com/download](https://ollama.com/download)
+* Then run in terminal:
+
+```bash
 ollama run mistral
+```
 
-### 4. install all dependcies from req.txt
+### 4️⃣ Install Python Dependencies
+
+```bash
 pip install -r req.txt
+```
 
-### 5. run the launcher.py
-this will invoke gui/main_window.py
+### 5️⃣ Launch MoodMeal GUI
 
-###  6. add in your prompt 
-#### for example:
+```bash
+python launcher.py
+```
 
-"I have eggs, bread, and some cheese — make me something quick. Cook time: 15 mins. Weather: Rainy. I’m tired." 
+---
 
-### 7. you have to wait 3-4 mins approx for generating 7 diffrent recipes where first 4 are the more popular and  last 3 are has mid popularity and has ingeridents that are not mentioned 
+## 🧪 How to Use
 
-### 8. start live cooking where a seperate dialog box opens where all recipe list is shown and it will recite each step of the recipe you can also ask questions by typing or in voice input,and gives timers if it has a timer  (experimental but works if there is less delay on generating the answer  . voice input is experimental but in the cli when running the code from vscode powershell or in cmd the output is displayed also timer is still experimental but works at some part i cant fix it cleanly )
+### 🧾 Input Prompt (Text or Voice)
 
-### 8. OR if you just need the process to make the recipe it give a step by step instructions shown on screen
+```text
+I have eggs, bread, and some cheese — make me something quick.
+Cook time: 15 mins. Weather: Rainy. I’m tired.
+```
 
+### ⏳ Step Generation (Wait \~2–3 min)
 
+* AI generates **7 recipe suggestions**
+* Top 4 are popular, bottom 3 are creative/unusual
+* Recipes are personalized to weather, ingredients, and mood
 
-### 9. manually close the window after completing the recipe
+---
 
-##### 10. future updates have APIs for faster execution and imporved memory when chatting with AI for sarcasm , also has timers that are precisely set for each step by an AI itself and has hands free full-on voice based assistance while cooking dynamically :)) (mood-meal-0.2.0)
+## 🍳 Start Cooking!
+
+* Click **"Start Live Cooking"**
+* A separate cooking window opens
+* AI reads steps aloud, tracks progress, and sets timers
+* You can **ask questions**, say **“repeat”**, or **skip steps**
+* Experimental voice command and timer support included
+
+> Prefer just reading? Click **“Nah I’ll Cook”** and view the full steps instantly.
+
+---
+
+## ⚠️ Current Limitations (v0.1.0)
+
+* Voice commands & timers are **experimental**
+* Responses may lag depending on local LLM processing
+* Not all cooking steps have accurate durations
+* Window must be manually closed after completion
+
+---
+
+## 🔮 Coming in v0.2.0
+
+* Full hands-free **voice-driven cooking**
+* **Dynamic timers per step**, AI-calculated
+* **Sarcasm, memory, and personalization** for recurring cooks
+* Hugging Face API fallback for faster, cloud-based results
+
+---
 
