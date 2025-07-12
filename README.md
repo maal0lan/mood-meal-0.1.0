@@ -1,6 +1,6 @@
 # 🍳 MoodMeal v0.1.0
 
-> A voice-first, hands-free AI cooking assistant that guides you through personalized recipes — powered by Mistral via Ollama, wrapped in a sleek Tkinter GUI. Just speak. Cook. Slay.
+> A voice-first, hands-free AI cooking assistant that guides you through personalized recipes — powered by Mistral via Ollama, wrapped in a sleek Tkinter GUI. Just speak. Cook. 
 
 ---
 
