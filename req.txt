@@ -1,0 +1,23 @@
+# Core
+python-dotenv
+requests
+
+# Voice
+SpeechRecognition
+pyaudio
+pyttsx3
+
+#for local inference
+transformers
+ ctransformers
+
+huggingface_hub 
+torch  
+accelerate
+
+# GUI
+textual
+rich        # Minimal TUI/GUI framework
+
+# JSON Fixing (do we do this rn? idk)
+json5
