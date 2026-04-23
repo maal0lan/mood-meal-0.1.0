@@ -6,7 +6,7 @@ def call_model(prompt: str) -> str:
     response = requests.post(
         "http://localhost:11434/api/generate",
         json={
-            "model": "mistral",   # Use the model you pulled with `ollama pull mistral`
+            "model": "gemma4:e2b",   # Use the model you pulled with `ollama pull smthing`
             "prompt": prompt,
             "stream": False       # Set to True if you want streaming (we use False for simple integration)
         }
