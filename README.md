@@ -37,8 +37,8 @@ cd mood-meal-0.1.0
 ### 2️⃣ Create a Virtual Environment
 
 ```bash
-python -m venv venv
-venv\Scripts\activate  # Windows
+python -m venv .venv
+.venv\Scripts\activate  # Windows
 ```
 
 ### 3️⃣ Install Ollama + Mistral
@@ -49,7 +49,7 @@ venv\Scripts\activate  # Windows
 * Then run in terminal:
 
 ```bash
-ollama run mistral
+ollama run gemma4:2b
 ```
 
 ### 4️⃣ Install Python Dependencies
